@@ -1,0 +1,59 @@
+[
+	{
+		"name":"goods",
+		"fields":[
+			"id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT"
+		]
+	},
+	{
+		"name":"goodsCategories",
+		"fields":[
+			"id INT(4) UNSIGNED NOL NULL  AUTO_INCREMENT",
+			"category_key VARCHAR(20) UNSIGNED NOT NULL",
+			"subset INT(4) UNSIGNED DEFAULT NULL",
+			"category_name VARCHAR(50) UNSIGNED NOT NULL",
+			"hidden BOOLEAN DEFAULT TRUE",
+			"options INT(40) UNSIGNED NOT NULL DEFAULT 0"
+		]
+	},
+	{
+		"name":"options_groups",
+		"fields":[
+			"id INT(4) UNSIGNED NUL NULL PRIMARY KEY AUTO_INCREMENT",
+			"option_key VARCHAR(20) UNSIGNED NOT NULL",
+			"option_name VARCHAR(50) UNSIGNED NOT NULL",
+			"type_of_values ENUM('NUMBER', 'STRING', 'TEXT')",
+			"unit VARCHAR(20) DEFAULT NULL"
+		]
+	},
+	{
+		"name":"options",
+		"fields":[
+			"id INT(12) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT",
+			"special_id INT(12) UNSIGNED NOT NULL",
+			"good_id INT(10) UNSIGNED NOT NULL",
+			"type INT(4) UNSIGNED NUL NULL"
+		]
+	},
+	{
+		"name":"number_options",
+		"fields":[
+			"id INT(12) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT",
+			"option_value NUMERIC(25, 10)"
+		]
+	},
+	{
+		"name":"string_options",
+		"fields":[
+			"id INT(12) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT",
+			"option_value VARCHAR(30)"
+		]
+	},
+	{
+		"name":"text_options",
+		"fields":[
+			"id INT(12) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT",
+			"option_value TEXT"
+		]
+	}
+]

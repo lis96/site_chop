@@ -1,0 +1,33 @@
+[
+	{
+		"name":"goods",
+		"values":[
+		]
+	},
+	{
+		"name":"goodsCategories",
+		"values":[
+			{
+				"keys":"category_key, category_name, options",
+				"values":"\"everything\", \"товары\", 7"
+			}
+		]
+	},
+	{
+		"name":"options_groups",
+		"values":[
+			{
+				"keys":"option_key, option_name, type_of_values, unit",
+				"values":"\"price\", \"цена\", \"NUMBER\", \"руб\""
+			},
+			{
+				"keys":"option_key, option_name, type_of_values",
+				"values":"\"barcode\", \"штрихкод\", \"STRING\""
+			},
+			{
+				"keys":"option_key, option_name, type_of_values",
+				"values":"\"description\", \"описание\", \"TEXT\""
+			}
+		]
+	}
+]
