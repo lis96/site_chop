@@ -1,33 +1,123 @@
-[
-	{
-		"name":"goods",
-		"values":[
-		]
-	},
-	{
-		"name":"goodsCategories",
-		"values":[
-			{
-				"keys":"category_key, category_name, options",
-				"values":"\"everything\", \"товары\", 7"
+{
+	"products":[
+		{
+			"keys":"product_name, categories",
+			"values":"\"Балет\", 7",
+			"options":{
+				"price":160,
+				"unit":"уп",
+				"in_stock":10,
+				"caliber":"0,4\"х10",
+				"number_of_shots":96
 			}
-		]
-	},
-	{
-		"name":"options_groups",
-		"values":[
-			{
-				"keys":"option_key, option_name, type_of_values, unit",
-				"values":"\"price\", \"цена\", \"NUMBER\", \"руб\""
-			},
-			{
-				"keys":"option_key, option_name, type_of_values",
-				"values":"\"barcode\", \"штрихкод\", \"STRING\""
-			},
-			{
-				"keys":"option_key, option_name, type_of_values",
-				"values":"\"description\", \"описание\", \"TEXT\""
+		},
+		{
+			"keys":"product_name, categories",
+			"values":"\"Цветок\", 7",
+			"options":{
+				"price":236,
+				"unit":"уп",
+				"in_stock":4,
+				"caliber":"0,8 х 7",
+				"number_of_shots":72
 			}
-		]
-	}
-]
+		},
+		{
+			"keys":"product_name, categories",
+			"values":"\"Катюша\", 7",
+			"options":{
+				"price":163,
+				"unit":"уп",
+				"in_stock":3,
+				"caliber":"0,2\" х 50",
+				"number_of_shots":80
+			}
+		},
+		{
+			"keys":"product_name, categories",
+			"values":"\"Фея\", 7",
+			"options":{
+				"price":277,
+				"unit":"уп",
+				"in_stock":0,
+				"caliber":"0,7\"x7",
+				"number_of_shots":48
+			}
+		},
+		{
+			"keys":"product_name, categories",
+			"values":"\"Ассорти\", 11",
+			"options":{
+				"price":309,
+				"unit":"уп",
+				"in_stock":1,
+				"number_of_shots":72
+			}
+		},
+		{
+			"keys":"product_name, categories",
+			"values":"\"Ариэль\", 11",
+			"options":{
+				"price":196,
+				"unit":"уп",
+				"in_stock":3,
+				"number_of_shots":72
+			}
+		}
+	],
+	"products_categories":[
+		{
+			"keys":"category_key, category_name, options",
+			"values":"\"everything\", \"товары\", 31"
+		},
+		{
+			"keys":"category_key, category_name, options, subset",
+			"values":"\"pyrotechnics\", \"пиротехника\", 127, 1"
+		},
+		{
+			"keys":"category_key, category_name, options, subset",
+			"values":"\"batteries\", \"батареи\", 127, 2"
+		},
+		{
+			"keys":"category_key, category_name, options, subset",
+			"values":"\"rocket\", \"ракеты\", 95, 2"
+		}
+	],
+	"options":[
+		{
+			"keys":"option_key, option_name, type_of_values, unit, ordered",
+			"values":"\"price\", \"цена\", \"NUMBER\", \"руб\", 1",
+			"default":"NULL"
+		},
+		{
+			"keys":"option_key, option_name, type_of_values",
+			"values":"\"barcode\", \"штрихкод\", \"STRING\"",
+			"default":"NULL"
+		},
+		{
+			"keys":"option_key, option_name, type_of_values",
+			"values":"\"description\", \"описание\", \"TEXT\"",
+			"default":"NULL"
+		},
+		{
+			"keys":"option_key, option_name, type_of_values",
+			"values":"\"unit\", \"единица измерения\", \"STRING\"",
+			"default":"\"ед\""
+		},
+		{
+			"keys":"option_key, option_name, type_of_values, ordered",
+			"values":"\"in_stock\", \"количество на складе\", \"NUMBER\", 1",
+			"default":"0"
+		},
+		{
+			"keys":"option_key, option_name, type_of_values",
+			"values":"\"caliber\", \"калибр\", \"STRING\"",
+			"default":"NULL"
+		},
+		{
+			"keys":"option_key, option_name, type_of_values, ordered",
+			"values":"\"number_of_shots\", \"число выстрелов\", \"NUMBER\", 1",
+			"default":"NULL"
+		}
+	]
+}
